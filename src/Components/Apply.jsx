@@ -8,7 +8,7 @@ import Card from "./Card"
 
 function Apply() {
   return (
-    <div className=" mt-25 max-w-7xl mx-auto px-6 lg:px-4  ">
+    <div className=" mt-25 max-w-7xl mx-auto px-6 lg:px-15  ">
       <h1 className='text-white text-2xl sm:text-3xl md:text-4xl font-semibold mb-6 '>More reasons to join</h1>
 
       <div className="flex flex-wrap  gap-6 ">

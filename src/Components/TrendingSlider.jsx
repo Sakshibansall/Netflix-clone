@@ -19,7 +19,7 @@ function TrendingSlider() {
   }, []);
 
   return (
-    <div className="max-w-7xl mx-auto px-6 lg:px-4 mt-14">
+    <div className="max-w-7xl mx-auto px-6 lg:px-15 mt-14">
       <h1 className="text-white text-2xl sm:text-3xl md:text-4xl font-semibold mb-6">
         Trending Now
       </h1>

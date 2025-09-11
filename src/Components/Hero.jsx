@@ -9,7 +9,7 @@ function Hero() {
 
       {/* Content */}
       <div className='relative z-10 flex flex-col items-center justify-center text-white text-center h-full px-4'>
-        <h1 className='main-h font-extrabold text-4xl md:text-4xl lg:text-7xl sm:text-4xl '>Unlimited movies, TV <br />shows and more</h1>
+        <h1 className='main-h font-extrabold text-4xl md:text-4xl lg:text-5xl sm:text-4xl '>Unlimited movies, TV <br />shows and more</h1>
         <p className='main-p mt-6 text-2xl md:font-bold'>Starts at ₹149. Cancel at any time.</p>
         <p className='main-p mt-9 text-xl font-medium'>Ready to watch? Enter your email to create or restart your membership.</p>
 

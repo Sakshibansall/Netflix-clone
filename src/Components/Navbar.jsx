@@ -3,9 +3,9 @@ import "./style.css"
 function Navbar() {
   return (
     <header>
-      <nav className=' navbar flex justify-between items-center  lg:px-35 md:px-10 sm:px-7  py-7 absolute top-0 left-0 w-full z-50'>
+      <nav className=' navbar flex justify-between items-center  lg:px-30 md:px-10 sm:px-7  py-7 absolute top-0 left-0 w-full z-50'>
         {/* Logo */}
-        <div><img src={logo} alt="logo" className='logo h-10 sm:h-8 md:h-10 lg:h-13' /></div>
+        <div><img src={logo} alt="logo" className='logo h-10 sm:h-8 md:h-10 lg:h-10' /></div>
 
         {/* Languages */}
         <div className=' flex items-center space-x-4'>
