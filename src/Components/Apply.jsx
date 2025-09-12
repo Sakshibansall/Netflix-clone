@@ -12,25 +12,30 @@ function Apply() {
       <h1 className='text-white text-2xl sm:text-3xl md:text-4xl font-semibold mb-6 '>More reasons to join</h1>
 
       <div className="flex flex-wrap  gap-6 ">
+
+        {/* card 1 */}
         <Card
         heading="Enjoy on your TV"
         text="Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more."
         image={tv}
         />
 
+        {/* card 2 */}
          <Card
         heading="Download your shows to watch offline"
         text="Save your favourites easily and always have something to watch."
         image={pointer}
         />
 
+        {/* card 3 */}
         <Card
         heading="Watch everywhere"
         text="Stream unlimited movies and TV shows on your phone, tablet, laptop and TV."
         image={micro}
         />
 
-          <Card
+        {/* card 4 */}
+        <Card
         heading="Create profiles for kids"
         text="Send kids on adventures with their favourite characters in a space made just for them — free with your membership."
         image={profile}

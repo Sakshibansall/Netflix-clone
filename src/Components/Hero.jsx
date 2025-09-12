@@ -21,6 +21,7 @@ function Hero() {
             type="email"
             placeholder='Email address' />
 
+            {/* button */}
           <div className="get-btn ">
             <CustomBtn text={"Get Started >"} onClick={() => alert("Signed In!")}></CustomBtn>
           </div>
