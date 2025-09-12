@@ -8,8 +8,8 @@ import Card from "./Card"
 
 function Apply() {
   return (
-    <div className=" mt-10 max-w-7xl mx-auto px-6 lg:px-15  ">
-      <h1 className='text-white text-lg lg:text-2xl sm:text-3xl md:text-4xl font-semibold mb-4 '>More reasons to join</h1>
+    <div className=" mt-10 lg:mt-20 max-w-screen-lg max-w-screen-sm max-w-screen-xl max-w-screen-2xl max-w-7xl mx-auto px-6 lg:px-15  ">
+      <h1 className='text-white text-lg lg:text-3xl sm:text-3xl md:text-4xl font-semibold mb-4 '>More reasons to join</h1>
 
       <div className="flex flex-wrap  gap-3 ">
 

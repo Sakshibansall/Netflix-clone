@@ -45,8 +45,8 @@ function FAQ() {
     setOpenIndex(openIndex === i ? null : i);
   }
   return (
-    <div className="max-w-7xl mx-auto px-6 lg:px-15  text-white mt-10 lg:mt-25">
-       <h1 className='text-white text-lg lg:text-2xl sm:text-3xl md:text-4xl font-semibold mb-6 '>Frequently Asked Questions</h1>
+    <div className="max-w-screen-lg max-w-screen-sm max-w-screen-xl max-w-screen-2xl max-w-7xl mx-auto px-6 lg:px-15  text-white mt-10 lg:mt-20">
+       <h1 className='text-white text-lg lg:text-3xl sm:text-3xl md:text-4xl font-semibold mb-6 '>Frequently Asked Questions</h1>
       {faqs.map((faq, i) => (
         <div key={i} onClick={() => toggle(i)} className='p-3 lg:p-6 mb-3 cursor-pointer bg-[rgb(45,45,45)] hover:bg-[rgb(65,65,65)] transition duration-300' >
 
