@@ -45,18 +45,18 @@ function FAQ() {
     setOpenIndex(openIndex === i ? null : i);
   }
   return (
-    <div className="max-w-7xl mx-auto px-6 lg:px-15  text-white mt-25">
-       <h1 className='text-white text-2xl sm:text-3xl md:text-4xl font-semibold mb-6 '>Frequently Asked Questions</h1>
+    <div className="max-w-7xl mx-auto px-6 lg:px-15  text-white mt-10 lg:mt-25">
+       <h1 className='text-white text-lg lg:text-2xl sm:text-3xl md:text-4xl font-semibold mb-6 '>Frequently Asked Questions</h1>
       {faqs.map((faq, i) => (
-        <div key={i} onClick={() => toggle(i)} className='p-6 mb-3 cursor-pointer bg-[rgb(45,45,45)] hover:bg-[rgb(65,65,65)] transition duration-300' >
+        <div key={i} onClick={() => toggle(i)} className='p-3 lg:p-6 mb-3 cursor-pointer bg-[rgb(45,45,45)] hover:bg-[rgb(65,65,65)] transition duration-300' >
 
           <div className="flex justify-between items-center ">
-          <h2 className='text-3xl'>{faq.q}</h2>
+          <h2 className='text-lg lg:text-3xl'>{faq.q}</h2>
           <span className='text-5xl'>{openIndex === i ? "×" : "+"}</span>
           </div>
           {openIndex===i&&(
             
-            <p className="mt-2 text-gray-300 whitespace-pre-line text-3xl pt-4 ">{faq.a}</p>)
+            <p className="mt-2 text-gray-300 whitespace-pre-line text-lg lg:text-3xl pt-4 ">{faq.a}</p>)
             } 
         </div>
       ))}

@@ -8,10 +8,10 @@ import Card from "./Card"
 
 function Apply() {
   return (
-    <div className=" mt-25 max-w-7xl mx-auto px-6 lg:px-15  ">
-      <h1 className='text-white text-2xl sm:text-3xl md:text-4xl font-semibold mb-6 '>More reasons to join</h1>
+    <div className=" mt-10 max-w-7xl mx-auto px-6 lg:px-15  ">
+      <h1 className='text-white text-lg lg:text-2xl sm:text-3xl md:text-4xl font-semibold mb-4 '>More reasons to join</h1>
 
-      <div className="flex flex-wrap  gap-6 ">
+      <div className="flex flex-wrap  gap-3 ">
 
         {/* card 1 */}
         <Card
