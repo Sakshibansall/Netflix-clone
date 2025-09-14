@@ -13,7 +13,7 @@ function Hero() {
     >
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center text-white text-center h-full px-4 sm:px-6 md:px-16 lg:px-20">
-        <h1 className="font-extrabold text-3xl sm:text-3xl md:text-4xl lg:text-6xl leading-snug pt-6 ">
+        <h1 className="font-extrabold text-3xl sm:text-3xl md:text-4xl lg:text-5xl leading-snug pt-6 ">
           Unlimited movies, TV shows and more
         </h1>
 
