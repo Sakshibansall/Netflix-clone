@@ -3,6 +3,7 @@ import Hero from './Components/Hero'
 import TrendingSlider from './Components/TrendingSlider'
 import Apply from './Components/Apply'
 import FAQ from './Components/FAQ'
+import Footer from './Components/Footer'
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <TrendingSlider/>
       <Apply/>
       <FAQ/>
+      <Footer/>
     </>
   )
 }
