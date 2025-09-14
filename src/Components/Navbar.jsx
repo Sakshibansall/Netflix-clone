@@ -29,7 +29,7 @@ function Navbar() {
           </select>
 
           {/* Sign In Button */}
-          <button className="btn text-white bg-[#e50914] px-3 sm:px-4 md:px-5 py-1 sm:py-2 font-semibold cursor-pointer text-sm sm:text-base md:text-lg lg:text-xl hover:bg-red-700 transition duration-300 rounded">
+          <button className="btn text-white bg-[#e50914] px-3 sm:px-4 md:px-5 py-1 sm:py-2 font-semibold cursor-pointer text-sm sm:text-base md:text-lg lg:text-xl hover:bg-red-700 transition duration-300 rounded" onClick={()=>alert("hi")}>
             Sign In
           </button>
         </div>
