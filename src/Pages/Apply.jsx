@@ -2,7 +2,7 @@ import tv from "../assets/tv.png";
 import pointer from "../assets/point-bottom.png";
 import micro from "../assets/micro.png";
 import profile from "../assets/profile.png";
-import Card from "./Card";
+import Card from "../Components/Card";
 
 function Apply() {
   return (

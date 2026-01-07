@@ -3,15 +3,15 @@ import CustomBtn from './CustomBtn'
 
 function Footer() {
   return (
-    <div className='mt-20 px-4 sm:px-6 lg:px-20'>
-      <div className='flex flex-col justify-center mb-5 text-center '>
-        <h1 className='text-white text-xl sm:text-xl md:text-2xl lg:text-xl font-semibold mb-4'>
+    <div className='mt-16 mb-25 px-4 sm:px-6 lg:px-20'>
+      <div className='flex flex-col sm:justify-center mb-5 text-left sm:text-center '>
+        <h1 className='text-white text-xl sm:text-xl md:text-xl lg:text-xl font-semibold mb-4'>
           Ready to watch? Enter your email to create or restart your membership.
         </h1>
 
         <form
           action='#'
-          className='flex flex-col sm:flex-row items-center justify-center sm:items-stretch gap-2  sm:gap-0'
+          className='flex flex-col sm:flex-row sm:items-center justify-center gap-2  sm:gap-0'
         >
           <input
             className=' me-3 px-4 sm:px-4 w-full max-w-2xl py-3 text-sm sm:text-base md:text-lg font-medium border border-gray-500 rounded sm:rounded-r-none focus:outline-none focus:border-white bg-black/40 placeholder-gray-300'
@@ -21,7 +21,7 @@ function Footer() {
           <CustomBtn
             text={'Get Started >'}
             onClick={() => alert('Signed In!')}
-            className='mt-2 sm:mt-0 sm:rounded-l-none'
+            className='mt-2 sm:mt-0  sm:rounded-l-none'
           />
         </form>
       </div>
@@ -76,7 +76,7 @@ function Footer() {
         </div>
 
         <div className='text-left mt-10'>
-          <span className='text-gray-300 text-md'>
+          <span className='text-gray-300 text-md '>
             This page is protected by Google reCAPTCHA to ensure you're not a bot. 
           </span>
         </div>

@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import banner from "../assets/background_banner.jpg"
-import CustomBtn from './CustomBtn.jsx'
-import "./style.css";
+import CustomBtn from '../Components/CustomBtn.jsx'
+import "../Components/style.css";
+import { useNavigate } from 'react-router-dom';
 
 function Hero() {
+const navigate=useNavigate();
+
   return (
     <section
       className="relative w-full h-[600px] sm:h-[600px] md:h-screen lg:h-screen bg-cover bg-no-repeat bg-center shadow-[0_30px_60px_rgba(18,27,63,0.8)]"
@@ -37,7 +40,7 @@ function Hero() {
           <div className="get-btn">
             <CustomBtn
               text={"Get Started >"}
-              onClick={() => alert("Signed In!")}
+              onClick={() => navigate("/home")}
             />
           </div>
         </div>
