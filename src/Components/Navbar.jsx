@@ -1,5 +1,5 @@
 import logo from '../assets/logo.png'
-import "./style.css"
+import "../index.css"
 import { useLocation, useNavigate ,Link} from 'react-router-dom';
 import { Navigate } from 'react-router-dom';
 

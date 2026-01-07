@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import banner from "../assets/background_banner.jpg"
 import CustomBtn from '../Components/CustomBtn.jsx'
-import "../Components/style.css";
+import "../index.css";
 import { useNavigate } from 'react-router-dom';
 
 function Hero() {

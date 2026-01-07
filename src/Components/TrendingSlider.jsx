@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import '../Components/style.css'
+import '../index.css'
 import CustomBtn from './CustomBtn'
 
 function TrendingSlider () {
