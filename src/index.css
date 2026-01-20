@@ -6,14 +6,15 @@
   box-sizing: border-box;
 
 }
-html{
+
+html {
   font-size: 14px;
 }
 
 body {
   background-color: #141414;
   font-family: 'Inter', 'Poppins', system-ui, sans-serif;
-  
+
 }
 
 /* Hide scrollbar */
@@ -35,75 +36,133 @@ body {
   left: -150px;
   height: 100%;
   width: 150px;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
   animation: shimmer 1.5s infinite;
 }
 
 @keyframes shimmer {
-  0% { left: -150px; }
-  100% { left: 100%; }
+  0% {
+    left: -150px;
+  }
+
+  100% {
+    left: 100%;
+  }
 }
 
 
 
 
 /* banner */
-.banner{
+.banner {
   position: relative;
   height: 100vh;
   width: 100%;
   overflow: hidden;
 }
 
-.banner iframe{
+.banner iframe {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
   pointer-events: none;
   object-fit: cover;
-  
+
 }
 
 
 
 /* Movies */
-.movies{
-  height: 26vh;
-  width: 20vw;
+.movies {
+  width: 200px;
+  aspect-ratio: 2/3;
   object-fit: cover;
+
+}
+
+
+/*top10 rows */
+.top10-row {
+  display: flex;
+  gap: 30px;
+  overflow-x: auto;
+  overflow-y: visible;
+  padding: 20px 40px;
+  width: 100%;
+}
+
+.top10-Card {
+  position: relative;
+  display: flex;
+  align-items: center;
   flex-shrink: 0;
+}
+
+.top10-poster {
+  width: 180px;
+  height: 260px;
+  object-fit: cover;
+  z-index: 2;
+  width: 50%;
+}
+
+.top10-rank {
+  position: absolute;
+  left: -40px;
+  font-size: 220px;
+  font-weight: 900;
+  line-height: 1;
+  width: 50%;
+  /* Netflix outline effect */
+  color: transparent;
+  -webkit-text-stroke: 6px rgba(255, 255, 255, 0.25);
+  text-stroke: 6px rgba(255, 255, 255, 0.25);
+
+  z-index: 1;
+  user-select: none;
+  pointer-events: none;
 }
 
 
 
-@media screen  and (max-width:1024px) {
-  .banner{
+
+
+@media screen and (max-width:1024px) {
+  .banner {
     height: 85vh;
   }
-  
+
 }
 
 @media screen and (max-width:768px) {
 
-  .banner{
+  .banner {
     height: 63vh;
+  }
+
+  /* rows */
+  .movies {
+    width: 120px;
   }
 }
 
 
 
 @media screen and (max-width:640px) {
-  .banner{
+  .banner {
     height: 53vh;
   }
-  
+
 }
 
 @media screen and (max-width:425px) {
-  .banner{
+  .banner {
     height: 35vh;
   }
-  
-}
 
+  /* rows */
+  .movies {
+    width: 100px;
+  }
+}

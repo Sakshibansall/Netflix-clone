@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import bannerVideo from './BannerVideos'
 import info from '../assets/info_icon.png'
 const TMDB_IMG = import.meta.env.VITE_IMG_URL
@@ -24,6 +24,7 @@ function Banner () {
     return null
   }
 
+  // auto slides of poster and video
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent(
@@ -32,13 +33,14 @@ function Banner () {
       )
       setShowVideo(false) //jabh poster change ho
       setTimeout(() => setShowVideo(true), 2000)
-    }, 60000)
+    }, 15000)
 
     return () => clearInterval(interval)
   }, [])
 
+  // when title change poster fetch
   useEffect(() => {
-    
+
     fetchPosterByTitle(current.title).then(img => {
       setPoster(img)
     })
@@ -71,6 +73,7 @@ function Banner () {
           allow='autoplay;fullscreen'
         ></iframe>
       )}
+
       {/* OVERLAY TITLE */}
       <div className='absolute top-15 left-8 md:top-30 md-left-30 lg:top-55 lg:left-18'>
         <h1 className='mb-3 md:mb-5'>
