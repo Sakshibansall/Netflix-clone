@@ -85,10 +85,10 @@ body {
 /*top10 rows */
 .top10-row {
   display: flex;
-  gap: 30px;
+  gap: 20px;
   overflow-x: auto;
   overflow-y: visible;
-  padding: 20px 40px;
+  padding: 20px 0px ;
   width: 100%;
 }
 
@@ -100,25 +100,21 @@ body {
 }
 
 .top10-poster {
+  position: relative;
+  left: -20px;
   width: 180px;
   height: 260px;
   object-fit: cover;
   z-index: 2;
-  width: 50%;
 }
 
 .top10-rank {
-  position: absolute;
-  left: -40px;
   font-size: 220px;
   font-weight: 900;
   line-height: 1;
-  width: 50%;
   /* Netflix outline effect */
   color: transparent;
   -webkit-text-stroke: 6px rgba(255, 255, 255, 0.25);
-  text-stroke: 6px rgba(255, 255, 255, 0.25);
-
   z-index: 1;
   user-select: none;
   pointer-events: none;
@@ -145,6 +141,12 @@ body {
   .movies {
     width: 120px;
   }
+
+  /* top10 */
+  .top10-poster{
+    width: 140px;
+    height: 230px;
+  }
 }
 
 
@@ -163,6 +165,19 @@ body {
 
   /* rows */
   .movies {
+    width: 100px;
+  }
+
+  /* top 10 */
+  .top10-row{
+    gap: 0;
+  }
+
+  .top10-rank{
+    font-size: 150px;
+  }
+  .top10-poster{
+    height: 150px;
     width: 100px;
   }
 }

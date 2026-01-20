@@ -5,7 +5,7 @@ function Row ({ title, movies }) {
 
   return (
     <div className='mb-4 md:mb-15 ml-5 md:ml-7 lg:ml-16'>
-      <h2 className='text-white md:mb-4 text-sm md:text-xl lg:text-2xl font-bold'>{title}</h2>
+      <h2 className='text-white mb-2 md:mb-4 text-sm md:text-xl lg:text-2xl font-bold'>{title}</h2>
 
       <div className='flex overflow-x-auto scroll-smooth snap-x snap-mandatory space-x-3'>
         {movies.map(movie => (
